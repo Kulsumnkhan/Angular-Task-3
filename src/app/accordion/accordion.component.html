@@ -1,0 +1,9 @@
+<!-- <p>accordion works!</p> -->
+
+<div class="card mt-5 border border-danger border-3">
+    <p-accordion [activeIndex]="0" *ngFor="let data of accordionData">
+        <p-accordionTab [header]="data.sectionHeader">
+            <p>{{data.sectionDetails}}</p>
+        </p-accordionTab>
+    </p-accordion>
+</div>

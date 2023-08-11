@@ -1,0 +1,14 @@
+<!-- <p>form works!</p> -->
+
+    <form [formGroup]="sectionForm" (ngSubmit)="addSection()" class="border border-success border-3 p-3 mt-5">
+        <p class="heading fs-3">Add Section</p>
+        <div>
+            <label for="header">Section Header - </label>
+            <input type="text" class="form-control" id="header" formControlName="sectionHeader">
+        </div>
+        <div>
+            <label for="details" class="pt-3">Section Details - </label>
+            <textarea type="text" class="form-control" id="details" formControlName="sectionDetails" rows="10"></textarea>
+        </div>
+        <button class="btn btn-primary w-100 my-3">Add</button>
+    </form>
